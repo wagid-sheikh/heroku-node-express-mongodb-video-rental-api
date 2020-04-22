@@ -1,0 +1,4 @@
+{
+    "jwtPrivateKey": "WagidSheikh123#",
+    "db": "mongodb://localhost/react_tests"
+}
