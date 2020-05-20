@@ -18,16 +18,6 @@ router.get(
   })
 );
 router.get(
-  "/WAGID",
-  asyncMiddleWare(async (req, res) => {
-    const genres = await Genre.find().sort({ name: 1 });
-    genres.length > 0
-      ? res.status(200).send(genres)
-      : res.status(404).json("No Records Found");
-  })
-);
-/* 
-router.get(
   "/:id",
   [auth, validateObjectId],
   asyncMiddleWare(async (req, res) => {
@@ -36,7 +26,7 @@ router.get(
       ? res.status(200).send(genre)
       : res.status(404).json("No such Record Found");
   })
-); */
+);
 router.post(
   "/",
   auth,
