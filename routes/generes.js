@@ -26,7 +26,7 @@ router.get(
       : res.status(404).json("No Records Found");
   })
 );
-router.get(
+/* router.get(
   "/:id",
   [auth, validateObjectId],
   asyncMiddleWare(async (req, res) => {
@@ -35,7 +35,7 @@ router.get(
       ? res.status(200).send(genre)
       : res.status(404).json("No such Record Found");
   })
-);
+); */
 router.post(
   "/",
   auth,
