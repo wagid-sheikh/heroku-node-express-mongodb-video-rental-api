@@ -1,4 +1,5 @@
 {
-    "jwtPrivateKey": "WagidSheikh123#",
-    "db": "mongodb://localhost/react_tests"
+  "jwtPrivateKey": "WagidSheikh123#",
+  "db": "mongodb://localhost/react_tests",
+  "requireAuth": "true"
 }
