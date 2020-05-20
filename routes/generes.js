@@ -26,7 +26,8 @@ router.get(
       : res.status(404).json("No Records Found");
   })
 );
-/* router.get(
+/* 
+router.get(
   "/:id",
   [auth, validateObjectId],
   asyncMiddleWare(async (req, res) => {
